@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html[dir="rtl"] {
+    font-family: "IBM Plex Sans Arabic", sans-serif;
+  }
+  
+  html[dir="ltr"] {
+    font-family: system-ui, sans-serif;
+  }
+
+  /* Increase base font size */
+  html {
+    font-size: 18px;
+  }
+}
+
+@layer components {
+  .icon-lg {
+    @apply w-8 h-8;
+  }
+
+  .icon-md {
+    @apply w-6 h-6;
+  }
+
+  .text-content {
+    @apply text-lg;
+  }
+
+  .text-heading {
+    @apply text-4xl font-bold;
+  }
+
+  .text-subheading {
+    @apply text-2xl font-semibold;
+  }
+}
